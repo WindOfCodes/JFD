@@ -32,6 +32,13 @@ fetch("./channels.json")
 
     mainSection.innerHTML = out;
   });
+const clearBtn = document.querySelector(".button");
+clearBtn.addEventListener("click", function () {
+  let choose = document.querySelectorAll(".choice--radio");
+  let input = document.querySelector(".filter__input");
+  for (let i = 0; i < choose.length; i++) choose[i].checked = false;
+  input.value = "";
+});
 
 const modeBtn = document.querySelector(".d_mode");
 modeBtn.addEventListener("click", function () {
