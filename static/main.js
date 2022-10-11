@@ -8,21 +8,29 @@ fetch("./channels.json")
     for (let channel of channels) {
       out += `
         <div class="channel_block">
-        <div class="channel_img"><img src='${channel.thumbnails.high.url}'></div>
+        <div class="channel_img"><img src='${
+          channel.thumbnails.high.url
+        }'></div>
         <div class="channel_info">
           <span class="channel_name">${channel.title}</span>
           <div class="data_nums">
             <div class="num_data subs">
               <span class="param">subscribers:</span>
-              <span class="value">${channel.statistics.subscriberCount}</span>
+              <span class="value">${channel.statistics.subscriberCount
+                .toString()
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
             </div>
             <div class="num_data videos">
               <span class="param">videos:</span>
-              <span class="value">${channel.statistics.videoCount}</span>
+              <span class="value">${channel.statistics.videoCount
+                .toString()
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
             </div>
             <div class="num_data views">
               <span class="param">views:</span>
-              <span class="value">${channel.statistics.viewCount}</span>
+              <span class="value">${channel.statistics.viewCount
+                .toString()
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
             </div>
           </div>
         </div>
