@@ -31,6 +31,12 @@ h1 {
   height: auto;
 }
 
+.channel_block a:link,
+.channel_block a:visited {
+  text-decoration: none;
+  color: #222;
+}
+
 .channel_img {
   border-color: #eceff1;
   border-style: solid;
@@ -399,7 +405,8 @@ button:-moz-focusring {
   .js-content {
     grid-template-columns: repeat(2, 1fr);
   }
-  .channel_img, .channel_img > img {
+  .channel_img,
+  .channel_img > img {
     width: 18vw;
     height: 18vw;
   }
@@ -422,7 +429,8 @@ button:-moz-focusring {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .channel_img, .channel_img > img {
+  .channel_img,
+  .channel_img > img {
     width: 25vw;
     height: 25vw;
   }
@@ -441,7 +449,8 @@ button:-moz-focusring {
 }
 
 @media only screen and (max-width: 360px) {
-  .channel_img, .channel_img > img {
+  .channel_img,
+  .channel_img > img {
     width: 35vw;
     height: 35vw;
     margin-bottom: 4%;

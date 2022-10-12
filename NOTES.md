@@ -8,4 +8,12 @@ Dodanie responsywności elementów na stronie.
  Wykorzystanie metody fetch API
  fetch('./channels.json') wywołuje CORS error przy uruchamianiu aplikacji przez live server (brak plików na serwerze).
  Przy komendzie 'npm start' problem nie występuje
+
+ Dodanie dark mode button
+
+ Nadanie buttonowi clear funkcji resetującej inputy radio oraz input textowy
+
+ Próby otworzenia funkcji sortującej dla inputów radio
+
+ Dodanie przekierowania na strony kanału po kliknięciu w kafelek
  -->

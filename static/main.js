@@ -8,6 +8,7 @@ fetch("./channels.json")
     for (let channel of channels) {
       out += `
         <div class="channel_block">
+        <a target="_blank" href=${channel.customUrl}>
         <div class="channel_img"><img src='${
           channel.thumbnails.high.url
         }'></div>
@@ -34,12 +35,38 @@ fetch("./channels.json")
             </div>
           </div>
         </div>
+        </a>
       </div>
         `;
     }
 
     mainSection.innerHTML = out;
   });
+
+// const form = document.querySelector(".sort__options");
+// const radioGroup = document.querySelectorAll(".choice--radio");
+
+// for (const radio of radioGroup) {
+//   radio.addEventListener("change", (e) => {
+//     for (const radio of radioGroup) {
+//       if (radio.checked) {
+//         if (radio.id == "sort-title") {
+//           channels.sort((a, b) =>
+//             a.channel_name > b.channel_name
+//               ? 1
+//               : b.channel_name > a.channel_name
+//               ? -1
+//               : 0
+//           );
+//         } else if (radio.id == "sort-subscribers") {
+//         } else if (radio.id == "sort-videos") {
+//         } else {
+//         }
+//       }
+//     }
+//   });
+// }
+
 const clearBtn = document.querySelector(".button");
 clearBtn.addEventListener("click", function () {
   let choose = document.querySelectorAll(".choice--radio");
