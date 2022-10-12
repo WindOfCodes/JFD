@@ -8,7 +8,9 @@ fetch("./channels.json")
     for (let channel of channels) {
       out += `
         <div class="channel_block">
-        <a target="_blank" href=${channel.customUrl}>
+        <a target="_blank" href=${
+          channel.customUrl
+        }?utm_source=google&utm_medium=email&utm_campaign=channels_for_devs>
         <div class="channel_img"><img src='${
           channel.thumbnails.high.url
         }'></div>
