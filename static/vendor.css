@@ -31,6 +31,10 @@ h1 {
   height: auto;
 }
 
+.channel_block:hover {
+  filter: opacity(0.6);
+}
+
 .channel_block a:link,
 .channel_block a:visited {
   text-decoration: none;
@@ -321,9 +325,13 @@ button:-moz-focusring {
   order: 3;
 }
 
-.dark_mode {
-  background-color: rgb(77, 77, 77);
+.dark_body {
+  background-color: rgb(41, 40, 48);
   color: #bdbdbd;
+}
+
+.dark_element {
+  background-color: red;
 }
 
 @media only screen and (min-width: 544px) {

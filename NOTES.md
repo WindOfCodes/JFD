@@ -16,4 +16,8 @@ Dodanie responsywności elementów na stronie.
  Próby otworzenia funkcji sortującej dla inputów radio
 
  Dodanie przekierowania na strony kanału po kliknięciu w kafelek
+
+ Próba rozwinięcia darkmode. Zmiana koloru wygenerowanych kafelków.
+ Wykorzystanie w JS: querySelectorAll(".channel_block"), querySelector(".js-content>*") oraz querySelectorAll(".js-content>*")
+ Stylowanie przez querySelector działa jedynie na pierszy z nich, w przypadku querySelectorAll wychodzi błąd. Możę trzeba byłoby to zrobić przez jakąś pętlę w js?
  -->

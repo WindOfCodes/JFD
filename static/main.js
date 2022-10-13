@@ -79,5 +79,5 @@ clearBtn.addEventListener("click", function () {
 
 const modeBtn = document.querySelector(".d_mode");
 modeBtn.addEventListener("click", function () {
-  document.body.classList.toggle("dark_mode");
+  document.body.classList.toggle("dark_body");
 });
